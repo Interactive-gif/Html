@@ -1,0 +1,259 @@
+** start of undefined **
+
+<!DOCtype html>
+<html lang"en">
+<head>
+<charset="UFT-8">
+<head>
+  <title> Buzos </title>
+  <link rel="stylesheet" href="styles.css">
+<head>
+  <body>
+    <h1 id="title"> Pre-registro Buzos </h1>
+  <p id="description"> Registrate para enterarte de todas las novedades y drops <p>
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name"> <p> Nombre </p> </label>
+        <input
+        required
+        id="name"
+        type="text"
+        placeholder="Ingresa tu nombre">
+</div>
+    <div>
+      <label id="email-label" for="email"> <p> Email <p/> </label>
+      <input
+      type="email"
+      required
+      id="email"
+      placeholder="Ingresa tu email">
+      </div>
+      <div>
+        <label id="number-label" for="number"> <p> Edad <p> </label>
+        <input
+        type="number"
+        required
+        id="number"
+        Placeholder="Ingresa tu edad"
+        max="120"
+        min="15">
+        </div>
+        <div>
+          <label id="dropdown-label" for="dropdown">
+          <p> ¿Cómo nos conociste? </p>  </label>
+         <select
+         id="dropdown">
+         <option value="Facebook"> Facebook </option>
+         <option value="Instagram">Instagram </option>
+         <option value="Otros"> Otros </option>
+        </select> 
+        <div>
+          <p id="Legalidad"> Acepto recibir correos con información referida a la marca: </p>
+          <hr id="linea">
+          <lable id="radio-label" for="radio">
+          <input
+          requiered
+          id="radio"
+          type="radio"
+          name="boton"
+          checked
+          required
+          class="input-radio"
+      value="Acepto"> Acepto los terminos y condiciones. 
+          </div>
+         <label id="radio-label2" for="radio2"> 
+           <input
+           id="radio2"
+           type="radio"
+           checked   
+           class="input-radio"
+           name="boton"
+           value="No acepto"> No acepto los terminos y condiciones.
+           </div>
+          <div>
+            <label id="checkbox-label" for="checkbox"> <p> ¿Sueles recomendar ropa a tus amigos? </p> </label>
+            <hr id="linea2">
+            <input
+       type="checkbox"
+       id="Respuesta"
+       value="Si"
+       checked name="checkbox"> Si
+       </label>
+       </div>   <div>                            <input
+       type="checkbox"
+       id="Respuesta"
+       value="No"
+       checked name="checkbox"> No 
+       </div>
+<div>
+  <label id="opinion" for="textarea"> <p> Qué tipo de ropa te gustaría encontrar aparte de la que ya se vende <p>   <hr id="Linea3"></label>
+  <textarea
+  id="textarea"> 
+  </textarea>
+    </label>
+    </div>
+    <div> 
+      <input
+      type="submit"
+      id="submit"
+     > 
+  </form>
+</body>
+
+** end of undefined **
+
+** start of undefined **
+
+#title{
+  color: white;
+  text-align: center;
+  font-size: 30;
+  font-family: system-ui
+}
+#description{
+  color: white;
+  text-align: center;
+  font-size: 15;
+  font-family:   systerm-ui;
+  margin: -20
+}
+body{
+  background-image: linear-gradient(125deg,rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(https://acdn.mitiendanube.com/stores/811/379/products/buzo-gris-icb-hombre1-0b3437d3292f8551fb16902155640869-1024-1024.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  font-family: poppy;
+  font-size: 15;
+  color: white;
+  line-height: 2em
+  text-align: left;
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-position: center;
+}
+  #survey-form{
+    min-height: 100%;
+ margin: 41 auto 1.20rem auto;
+    width: 500px;
+    padding: 20px 2.5rem 0.625rem;
+    border-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(27,27,50, 0.8);
+  }
+
+#name-label {
+  color: white;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+::placeholder{
+  color: rgba(234,234,234,0.5)
+}
+  #email,#name,#number{
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: white;
+    width: 100%;
+    padding: 9px 12px;
+    background-color: transparent;
+    color: white;
+    margin-top: -15px;
+    margin-left: -3px;
+  }
+  #email-label{
+    text-align: left;
+    font-family: poppy;
+    font-size: 20;
+    color: white;
+    line-height: 2em;
+  }
+  #number-label{
+    text-align: left;
+    font-family: poppy;
+    font-size: 20;
+    color: white;
+    line-height: 2em;
+  }
+   #dropdown-label{
+    text-align: left;
+    font-family: poppy;
+    font-size: 20;
+    color: white;
+    line-height: 2em;
+    border-radius: 10px;
+  }
+  select{
+    color: rgba(234,234,234,60%);
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: transparent;
+    border-color: white;
+    width: 100%;
+    padding: 6px 12px;
+    margin-top: -15;
+    margin-left: -3;
+  }
+  option{
+    color: white;
+    background-color: rgba(0,0,40, 1);;
+  }
+  #legalidad{
+    text-align: left;
+    font-family: poppy;
+    font-size: 15;
+    color: white;
+    line-height: 2em;  
+  }
+  #linea{
+    margin-top: -15px;
+    width: 360px;
+    margin-left: 0px
+      }
+#radio-label,#radio-label2{
+  text-align: left;
+  padding: 6px 15px;
+  margin-left: -15;
+  font-size: 15;
+  font-family: popping;
+  line-height: 2em;
+  color: white; 
+}
+ #checkbox-label{
+    text-align: left;
+    font-family: poppy;
+    font-size: 15;
+    color: white;
+    line-height: 2em;
+  }
+    #linea2{
+    margin-top: -15px;
+    width: 230px;
+    margin-left: 0px
+      }
+        #Linea3{
+    margin-top: -15px;
+    width: 400px;
+    margin-left: 0px
+      }
+      #textarea{
+      width: 400px;
+      height: 150;
+      margin-top: 10;
+      background-color: transparent;
+      color: white;
+      font-family: poppins;
+      }
+  #submit{
+    background-color: transparent;
+    color: white;
+   border-color: white;
+   margin-top: 30;
+   margin-left: 170 
+  }
+
+** end of undefined **
+
